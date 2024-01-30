@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffd700; /* Žuta pozadina */
+}
+
+#svg-lopta {
+    transition: transform 0.2s ease-out; 
+}
+
+/* Animacija za promenu boje pozadine */
+@keyframes changeColor {
+    0%, 100% {
+        background-color: #ffd700; /* Žuta pozadina */
+    }
+    50% {
+        background-color: #ff6699; /* Druga boja */
+    }
+}
+
+/* Brzina animacije */
+@keyframes changeColorFast {
+    0%, 100% {
+        background-color: #ffd700; /* Žuta pozadina */
+    }
+    50% {
+        background-color: #ff6699; /* Druga boja */
+    }
+}
